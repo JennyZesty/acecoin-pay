@@ -17,7 +17,7 @@ body {
   margin: 40px auto;
   padding-top: 6em;
   font-family: $poppins;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255,);
   padding: 3rem;
 }
 .form {
@@ -177,6 +177,16 @@ body {
   height: 100%;
   width: 90%;
   float: left;
+  .blu{
+    display: block;
+    height: 1.5em;
+    width: 5em;
+    background: $blue_bg;
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
   .credit-card{
    width: 16rem;
    height: 23.4rem;
@@ -189,6 +199,7 @@ body {
    transform: translate(-50%,0);
    overflow: hidden;
    z-index: 99;
+   backdrop-filter: blur(15px);
     &-header{
       position: relative;
       @include setFlex(flex, center, space-between, initial);
@@ -243,5 +254,116 @@ body {
             height: 2.5em;
           }
         }
+        &-design{
+          width: 700px;
+          height: 700px;
+          border: 1px solid #ebebeb;
+          border-radius: 50%;
+          @include setFlex(flex, center, center, initial);
+          top: 3.5em;
+          position: absolute;
+          z-index: -1;
+          .inner{
+            display: inline-block;
+            width: 550px;
+            height: 550px;
+            border-radius: inherit;
+            border: inherit;
+          }
+        }
+  }
+  &-details{
+    background-color: #f0f3f8;
+    height: 82%;
+    width: 100%;
+    border-radius: 1em;
+    position: absolute;
+    bottom: 0;
+    .purchase-data{
+      position: relative;
+      padding: 2em;
+      top: 15.5em;
+    .data{
+      text-transform: capitalize;
+      font-size: 1em;
+      color: $text_two;
+      margin-bottom: .7em;
+      @include setFlex(flex, center, space-between, initial);
+      .title{
+        font-size: .85em;
+        font-weight: 500;
+      }
+      .value{
+        color: $text_one;
+        font-weight: 600;
+      }
+    }
+    }
+    .divider{
+      position: absolute;
+      bottom: 7.4em;
+      width: 100%;
+      border: 1px dashed #d3d3d3;
+      display: flex;
+      align-items: center;
+      .left, .right{
+        position: absolute;
+        width: 2.65em;
+        height: 2.65em;
+        border-radius: 50%;
+        background-color: #ffff;}
+        .left{
+          left: -25px;
+        }
+        .right{
+          right: -25px;
+        }
+        &::before{
+          content: empty;
+          display: block;
+          width: 100%;
+          height: 2em;
+          background-color: #f0f3f8;
+        } 
+      }
+    .purchase-total{
+      position: absolute;
+      width: 100%;
+      padding: 0 2em;
+      bottom: 1.4em;
+      @include setFlex(flex, center, space-between, initial);
+      .total{
+        .desc{
+          color: #8e968e;
+          font-size: .9em;
+          font-weight: 500;
+        }
+        .t-amount{
+          @include setFlex(flex, center, initial, initial); 
+          color: $text_one;
+          .amount{
+            font-size: 2em;
+            font-weight: 700;
+            sub{
+              position: relative;
+              font-size: .6em;
+              bottom: 1px;
+              font-weight: 600;
+            }
+          }
+          .symbol{
+            position: relative;
+            font-size: 1.1em;
+            top: 1px;
+            font-weight: 600;
+            margin-left: .2em;
+            color: #8e968e;
+          }
+        }
+      }
+      img{
+        height: 1.8em;
+      }
+    }
   }
 }
