@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+html {
+  font-size: 16px;
+}
+
+body {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.wrapper {
+  max-width: 1200px;
+  position: relative;
+  margin: 40px auto;
+  padding-top: 6em;
+  font-family: "Poppins", san-serif;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 3rem;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-bottom: 5rem;
+}
+.form-header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+.form-header .logo-circle {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: #035fff;
+}
+.form-header .logo-card {
+  margin: 10px 10px 0 0;
+  padding: 5px 15px;
+  color: white;
+}
+.form-header .logo h1 {
+  font-size: 1.75em;
+  font-weight: 700;
+  margin-left: 0.6em;
+  color: #05365c;
+}
+.form-header .logo h1 .lean {
+  font-weight: 300;
+}
+.form-header .timer {
+  font-size: 1.35em;
+  font-weight: 600;
+}
+.form-header .timer-box {
+  background-color: #17254c;
+  color: #fff;
+  height: 1.5em;
+  width: 1.3em;
+  border-radius: 10%;
+  margin-left: -4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: initial;
+}
+.form-header .timer-divider {
+  position: relative;
+  right: 2px;
+}
+.form-body .input-group {
+  margin-bottom: 2em;
+}
+.form-body .input-group .header {
+  margin-bottom: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+.form-body .input-group .header .description .title {
+  text-transform: capitalize;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #05365c;
+  margin-bottom: 0.4em;
+}
+.form-body .input-group .header .description .desc {
+  text-transform: capitalize;
+  font-size: 0.77em;
+  width: 500;
+  color: #8e96a3;
+}
+.form-body .input-group .header button.edit {
+  color: #035fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+.form-body .input-group .header button.edit .btn-desc {
+  display: block;
+  margin-left: 0.6em;
+  font-weight: 500;
+}
+.form-body .input-group .main {
+  position: relative;
+  margin-top: 1em;
+}
+.form-body .input-group .main img {
+  position: absolute;
+}
+.form-body .input-group .main img.leading-icon {
+  left: 1.2em;
+  height: 2em;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.form-body .input-group .main img.trailing-icon {
+  right: 1.2em;
+  height: 2em;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.form-body .input-group .main input {
+  width: 100%;
+  border-radius: 6px;
+  font-size: 1.2em;
+  font-weight: 500;
+  border: 2px solid rgba(129, 129, 156, 0.5);
+  padding: 0.7em 4em;
+  outline-color: #0077B6;
+  background: linear-gradient(45deg, #f8faf9, transparent);
+}
+.form-body .input-group .main input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.5;
+}
+.form-body .input-group .main__col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+.form-body .input-group .main__col .header {
+  margin-bottom: 0;
+}
+.form-body .input-group .main__col .main {
+  width: 400px;
+  margin-top: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.form-body .input-group .main__col .main input {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  background: none;
+  color: #0077B6;
+}
+.form-body .grp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  width: 400px;
+}
+.form-body .btn {
+  width: 100%;
+  height: 70px;
+  background-color: #035fff;
+  border-radius: 4px;
+  font-size: 1.75em;
+  font-weight: 100em;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.checkout {
+  position: relative;
+  height: 100%;
+  width: 90%;
+  float: left;
+}
+.checkout .credit-card {
+  width: 16rem;
+  height: 23.4rem;
+  background: linear-gradient(180deg, rgba(225, 225, 225, 0.5), #fff);
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0px 4px 14px 2px rgba(142, 142, 142, 0.15);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+  z-index: 99;
+}
+.checkout .credit-card-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-bottom: 8em;
+}
+.checkout .credit-card-header img {
+  height: 1.8em;
+}
+.checkout .credit-card-body {
+  position: relative;
+  color: #05365c;
+}
+.checkout .credit-card-body span {
+  display: block;
+}
+.checkout .credit-card-body .holder {
+  text-transform: capitalize;
+  font-size: 0.95em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: #05365c;
+}
+.checkout .credit-card-body .card-digits {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+.checkout .credit-card-body .card-digits .hidden-digits {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+}
+.checkout .credit-card-body .card-digits .hidden-digits .circle {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: #17254c;
+  margin-right: 0.4em;
+}
+.checkout .credit-card-body .card-digits .hidden-digits .visible-digits {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-left: 1em;
+}
+.checkout .credit-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  position: relative;
+  top: 1.4em;
+}
+.checkout .credit-card-footer .expiry {
+  font-size: 1em;
+  font-weight: 600;
+}
+.checkout .credit-card-footer .logo {
+  height: 2.5em;
+}
+
+/*# sourceMappingURL=main.css.map */

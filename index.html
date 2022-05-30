@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ACECOIN PAY</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper grid grid-cols-12">
+        <div class="col-span-12 md:col-span-8">
+            <div class="form">
+                <header class="form-header">
+                    <div class="logo">
+                        <span class="logo-circle"><i class="fa fa-credit-card logo-card"></i></span>
+                        <h1>AceCoin<span class="lean">Pay</span></h1>
+                    </div>
+                    <div class="timer">
+                        <span class="timer-box">0</span>
+                        <span class="timer-box">1</span>
+                        <span class="timer-divider">:</span>
+                        <span class="timer-box">1</span>
+                        <span class="timer-box">9</span>
+                    </div>
+                </header>
+                <section class="form-body">
+                    <div class="input-group">
+                        <div class="header">
+                            <div class="description">
+                                <h2 class="title">Card Number</h2>
+                                <p class="desc">Enter the 16-digit card on your card</p>
+                            </div>
+                            <button class="edit">
+                                <i class="fa fa-pencil"></i>
+                                <span class="btn-ndesc">Edit</span>
+                            </button>
+                        </div>
+                        <div class="main">
+                            <img src="assets/svg/mastercard.svg" alt="" class="leading-icon">
+                            <input type="text" placeholder="3345 - 2245 - 5478 - 5768">
+                            <img src="assets/svg/verified.svg" alt="" class="trailing-icon">
+                        </div>
+                    </div>
+                    <div class="input-group __col">
+                        <div class="header">
+                            <div class="description">
+                                <h2 class="title">Expiry Date</h2>
+                                <p class="desc">Enter expiration date of the card</p>
+                            </div>
+                            <div class="grp">
+                                <div class="main">
+                                    <input type="text" placeholder="7">
+                                </div>
+                                <div class="main">
+                                    <span>/</span>
+                                </div>
+                                <div class="main">
+                                    <input type="text" placeholder="7">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group __col">
+                        <div class="header">
+                            <div class="description">
+                                <h2 class="title">CVV number</h2>
+                                <p class="desc">Enter your CVV number</p>
+                            </div>
+                            <div class="main">
+                                <input type="text" placeholder="312">
+                                <img src="assets/svg/dot.svg" alt="" class="trailing-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group __col">
+                        <div class="header">
+                            <div class="description">
+                                <h2 class="title">Password</h2>
+                                <p class="desc">Enter your dynamic Password</p>
+                            </div>
+                            <div class="main">
+                                <input type="password" value="Password">
+                                <img src="assets/svg/dot.svg" alt="" class="trailing-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Pay Now</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="col-span-12 md:col-span-4">
+            <div class="checkout">
+                <span class="blu"></span>
+                <div class="credit-card">
+                    <div class="credit-card-header">
+                        <img src="assets/img/chip.png" alt="">
+                        <img src="assets/img/wifi.png" alt="">
+                    </div>
+                    <div class="credit-card-body">
+                        <span class="holder">Jennifer Udeh</span>
+                        <div class="card-digits">
+                        <div class="hidden-digits">
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <div class="visible-digits">3456</div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="credit-card-footer">
+                        <span class="expiry">09/22</span>
+                        <img src="assets/svg/mastercard-2.svg" class="logo" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="" async defer></script>
+</body>
+
+</html>
